@@ -132,7 +132,7 @@ Stores product ratings submitted by customers.
 ### Customer Relationships
 - One customer can place many orders.
 - Each order belongs to one customer.
-- Customers are linked to cities through `Address_City`. :contentReference[oaicite:2]{index=2}
+- Customers are linked to cities through `Address_City`.
 
 ### Product Relationships
 - One brand can be linked to many products.
