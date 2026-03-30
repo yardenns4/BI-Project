@@ -3,7 +3,7 @@
 ## Overview
 This section describes the Data Warehouse designed for the BI solution.
 
-The warehouse was designed to support operational, tactical, and strategic decision-making through multiple fact tables at different levels of granularity. The final and relevant version is the updated model described in Part B, where ratings were merged into FACT_ORDERITEMS, shipments were modeled as a fact table, and the schema was refined to improve analytical consistency. :contentReference[oaicite:5]{index=5}
+The warehouse was designed to support operational, tactical, and strategic decision-making through multiple fact tables at different levels of granularity. 
 
 ---
 
@@ -109,7 +109,7 @@ Supports logistics and fulfillment analysis, especially SLA, delays, and carrier
 ### DIM_CUSTOMERS
 **Type:** Slowly Changing Dimension Type 2
 
-Used to preserve customer history, especially when attributes like address change over time. :contentReference[oaicite:7]{index=7}
+Used to preserve customer history, especially when attributes like address change over time.
 
 | Field | Type | Description |
 |---|---|---|
@@ -220,7 +220,7 @@ The updated schema reflects several design improvements:
 - SHIPPINGS was removed as a dimension and redefined as FACT_SHIPMENTS because shipments are transactional by nature
 - DIM_SHIPMENT_COMPANIES was added to support carrier performance analysis
 - unnecessary date/time foreign keys were removed where they had no analytical contribution
-- SCD Type 2 validity is managed by start and end dates rather than an `IsCurrent` flag :contentReference[oaicite:9]{index=9}
+- SCD Type 2 validity is managed by start and end dates rather than an `IsCurrent` flag 
 
 ---
 
